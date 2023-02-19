@@ -67,7 +67,7 @@ export default function EditPost({
           <h3 className="font-bold text-gray-700">{name}</h3>
         </div>
         <div className="my-8">
-          <p className="break-all">{title}</p>
+          <p className="break-normal">{title}</p>
         </div>
         <div className="flex items-center gap-4">
           <p className="text-small font-bold text-gray-700">
