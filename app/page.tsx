@@ -18,7 +18,7 @@ export default function Home(): ReactNode {
     queryFn: allPosts,
     queryKey: ['posts'],
   });
-  if (error) return;
+  if (error) console.log(error);
   if (isLoading) return 'Loading...';
 
   return (
