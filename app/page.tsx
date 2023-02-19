@@ -13,12 +13,12 @@ const allPosts = async () => {
   return response.data;
 };
 
-export default function Home() {
+export default function Home(): ReactNode {
   const { data, error, isLoading } = useQuery<PostType[]>({
     queryFn: allPosts,
     queryKey: ['posts'],
   });
-  if (error) return error;
+  if (error) return;
   if (isLoading) return 'Loading...';
 
   return (
